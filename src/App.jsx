@@ -3,7 +3,7 @@ import './App.css'
 import Hero from './components/Hero'
 import Aboutus from './components/Aboutus'
 import Services from './components/Services'
-
+import Testimonials from './components/Testimonials'
 function App() {
 
   return (
@@ -11,6 +11,7 @@ function App() {
       <Hero/>
       <Aboutus/>
       <Services/>
+      <Testimonials/>
     </div>
   )
 }
