@@ -4,44 +4,44 @@ const Services = () => {
   return (
     <div className='w-full font-main flex justify-center items-center flex-col py-10 polkaback'>
         <h2 className='text-2xl text-base-500 tracking-wide'>Kashi Mantram</h2>
-        <h2 className='text-6xl text-base-500 '>Rooms & Services</h2>
-        <div className='w-60 h-1 bg-base-500 flex justify-center items-center mt-2'>
-            <div className='w-5 h-5 bg-base-500 rotate-45'></div>
+        <h2 className='sm:text-6xl text-4xl px-4 text-base-500 '>Rooms & Services</h2>
+        <div className='w-60 h-0.5 bg-base-500 flex justify-center items-center mt-2'>
+            <div className='w-4 h-4 bg-base-500 rotate-45'></div>
         </div>
-        <div className='w-full px-40 flex justify-center items-center flex-wrap gap-10 py-10 text-xl font-s'>
-          <div id='roomcard' className='roomcard flex-1 flex justify-center items-end min-w-96 h-80 bg-gray-100 overflow-hidden'>
-            <div className='relative font-s w-full flex justify-between items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-              <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-              <p className='font-medium text-2xl text-base-500 tracking-tight'>Premium Room's</p>
-              <p id='innerprice' className='innerprice1 opacity-100 transition-all '>₹3,000-3,500</p>
-            </div>
+        <div className='w-full px-10 sm:px-40 flex justify-center items-center flex-wrap gap-10 py-10 text-xl font-s'>
+        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
+            <p className='font-medium inline text-xl text-base-500'>Premium Room's</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹3,000-3,500</p>
           </div>
-          <div id='roomcard' className='roomcard flex-1 flex justify-center items-end min-w-96 h-80 bg-gray-100 overflow-hidden'>
-            <div className='relative font-s w-full flex justify-between items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-              <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-              <p className='font-medium text-2xl text-base-500 tracking-tight'>Super Premium Room's</p>
-              <p id='innerprice' className='innerprice1 opacity-100 transition-all '>₹4,000</p>
-            </div>
+        </div>
+        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
+            <p className='font-medium inline text-xl  text-base-500'>Super Premium Room's</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹4,000</p>
           </div>
-          <div id='roomcard' className='roomcard flex-1 flex justify-center items-end min-w-96 h-80 bg-gray-100 overflow-hidden'>
-            <div className='relative font-s w-full flex justify-between items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-              <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-              <p className='font-medium text-2xl text-base-500 tracking-tight'>Family Suit's</p>
-              <p id='innerprice' className='innerprice1 opacity-100 transition-all '>₹7,500</p>
-            </div>
+        </div>
+        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
+            <p className='font-medium inline text-xl  text-base-500'>Family Suit's</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹7,500</p>
           </div>
-          <div id='roomcard' className='roomcard flex-1 flex justify-center items-end min-w-96 h-80 bg-gray-100 overflow-hidden'>
-            <div className='relative font-s w-full flex justify-between items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-              <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-              <p className='font-medium text-2xl text-base-500 tracking-tight'>Dor</p>
-              <p id='innerprice' className='innerprice1 opacity-100 transition-all '></p>
-            </div>
+        </div>
+        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
+            <p className='font-medium inline text-xl text-base-500'>Dor</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '></p>
           </div>
+        </div>
           
         </div>
-        <h2 className='text-6xl text-base-500 '>Amenities</h2>
-        <div className='w-60 h-1 bg-base-500 flex justify-center items-center mt-2'>
-            <div className='w-5 h-5 bg-base-500 rotate-45'></div>
+        <h2 className='text-5xl text-base-500 '>Amenities</h2>
+        <div className='w-60 h-0.5 bg-base-500 flex justify-center items-center mt-2'>
+            <div className='w-4 h-4 bg-base-500 rotate-45'></div>
         </div>
         <div className='flex justify-center w-full flex-wrap px-40 gap-10 my-10 items-stretch'>
           <div className='flex-1 bg-white rounded-sm p-4 font-s border-base-500 border min-w-80 hover:border-l-4 transition-all'>

@@ -5,24 +5,24 @@ const Testimonials = () => {
     <div style={{ background: "#F0F0F0" }} className='w-full flex justify-center items-center py-20 flex-col'>
       <div className='font-main flex justify-center items-center flex-col'>
         <h2 className='text-2xl text-base-500 tracking-tight font-s'>Testimonials</h2>
-        <h2 className='text-6xl text-base-500 '>What Guest’s Say?</h2>
-        <div className='w-60 h-1 bg-base-500 flex justify-center items-center mt-2'>
-          <div className='w-5 h-5 bg-base-500 rotate-45'></div>
+        <h2 className='sm:text-6xl text-4xl text-base-500 '>What Guest’s Say?</h2>
+        <div className='w-60 h-0.5 bg-base-500 flex justify-center items-center mt-2'>
+          <div className='w-4 h-4 bg-base-500 rotate-45'></div>
         </div>
       </div>
-      <div className='w-full overflow-x-scroll flex justify-center items-center gap-20 example py-10 px-20 hidescroll'>
+      <div className='w-full overflow-x-scroll flex justify-center items-center gap-20 example py-10 px-10 hidescroll'>
         <div className='flex hidescroll overflow-x-scroll' style={{ minWidth: '50%' }}></div> {/* Spacer to center initial content */}
-        {['Vishal Aryan', 'John Doe', 'Jane Smith','Vishal Aryan', 'John Doe'].map((name, index) => (
+        {['Vishal Aryan', 'Yashi Yadav', 'Vinay Choudhary','Vishal Aryan', 'Sejal Singh'].map((name, index) => (
           <div
             key={index}
-            className='bg-white flex justify-center items-start flex-col p-10 font-s gap-10 rounded-sm border-base-500 border-l-2 border-r-2'
-            style={{ width: '600px', flexShrink: 0 }}
+            className='sm:w-9/12 w-full bg-white flex justify-center items-center sm:items-start flex-col p-10 font-s gap-10 rounded-sm border-base-500 border-t-2 border-b-2 sm:border-b-0 sm:border-t-0 border-l-0 border-r-0 sm:border-l-2 sm:border-r-2'
+            style={{ flexShrink: 0 }}
           >
-            <div className='flex justify-start items-center gap-10'>
-              <div className='w-20 h-20 rounded-full bg-base-500'></div>
-              <div>
+            <div className='w-full flex justify-start items-center flex-col gap-0 sm:gap-5 sm:flex-row'>
+              <div className='flex-1 w-40 sm:w-20 h-40 sm:h-20 rounded-full bg-base-500'></div>
+              <div className=' w-full'>
                 <div>``````</div>
-                <p className='text-2xl font-bold tracking-tight'>{name}</p>
+                <p className='text-2xl font-bold tracking-tight justify-self-start'>{name}</p>
                 <p>-Gobibo</p>
               </div>
             </div>
