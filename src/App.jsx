@@ -18,6 +18,7 @@ function App() {
   }
   return (
     <div className=''>
+      <div className='hidden w-screen h-max bg-base-500 text-white tracking-wider'><p>hello</p></div>
       <div id='BookingPage' style={{zIndex:999}} className='absolute top-0 left-0 w-full h-screen bg-black/50 hidden justify-center items-center'>
         <div className='transition-all relative w-full sm:w-3/4 h-full sm:h-3/4 bg-white rounded-sm flex justify-center items-center flex-col gap-10 px-10 sm:px-0'>
           <p onClick={handlecancel} className='absolute top-5 left-10 text-4xl cursor-pointer'>←</p>
