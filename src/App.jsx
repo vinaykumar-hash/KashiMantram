@@ -17,14 +17,14 @@ function App() {
     BookPage.classList.add("hidden");
   }
   return (
-    <div className=''>
-      <div className='hidden w-screen h-max bg-base-500 text-white tracking-wider'><p>hello</p></div>
+    <div className='antialiased'>
+      <div className='sm:px-20 px-4 py-2 w-full h-max bg-base-700 text-white tracking-wide font-thin flex justify-between sm:flex-row flex-col'><p> We Use Best Practice To Maintain Environment</p><p>For Reservations - 05424501356</p></div>
       <div id='BookingPage' style={{zIndex:999}} className='absolute top-0 left-0 w-full h-screen bg-black/50 hidden justify-center items-center'>
         <div className='transition-all relative w-full sm:w-3/4 h-full sm:h-3/4 bg-white rounded-sm flex justify-center items-center flex-col gap-10 px-10 sm:px-0'>
           <p onClick={handlecancel} className='absolute top-5 left-10 text-4xl cursor-pointer'>←</p>
           <div className='flex justify-center items-center flex-col gap-5'>
             <p className='font-s font-semibold text-4xl text-center sm:text-4xl tracking-tight text-black/80' >Book Directly with us to get Best Discount*</p>
-            <p className='flex jsutify-center items-center text-2xl font-s font-regular'><img width="40" height="40" src="https://img.icons8.com/ios-glyphs/90/e1a140/phone--v1.png" alt="phone--v1"/>+91 9878765654</p>
+            <p className='flex jsutify-center items-center sm:flex-col flex-col text-2xl font-s font-regular gap-4'><div className='flex'><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/90/e1a140/phone--v1.png" alt="phone--v1"/>Give Us a Call</div><div className='flex sm:flex-row flex-col items-center'><p className='underline decoration-base-500 underline-offset-4 decoration-1'>+91 8299-408652 </p><p className='no-underline'>&nbsp;or &nbsp;</p><p className='underline decoration-base-500 underline-offset-4 decoration-1'>0542-4501356</p></div> </p>
           </div>
           <div className='sm:w-60 w-48 h-0.5 bg-base-500 flex justify-center items-center mt-2'>
             <div className='w-4 h-4 bg-base-500 rotate-45'></div>

@@ -35,8 +35,8 @@ import React, { useState, useEffect } from 'react';
 
 const images = [
   '/rooms/premium/r1.jpg', 
-  '/rooms/premium/r2.jpg', 
-  '/rooms/premium/r3.jpg'
+  '/rooms/standard/r1.jpg', 
+  '/rooms/familysuit/r1.jpg'
 ];
 
 const Hero = () => {
@@ -85,8 +85,8 @@ const Hero = () => {
           </h2>
         </div>
 
-        <button onClick={handleBookButton} className='sm:hidden block px-6 py-4 mt-10 font-base text-4xl text-base-500 transition-all'>
-          Book Now →
+        <button onClick={handleBookButton} className='sm:hidden block px-6 py-4 mt-10 font-base text-4xl text-base-500 transition-all bg-white rounded-sm'>
+          Book Now
         </button>
       </div>
     </div>

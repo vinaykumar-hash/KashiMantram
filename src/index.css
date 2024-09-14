@@ -70,6 +70,48 @@
   background-size: 20px 20px;
   background-position: 0 0,10px 10px;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #532200;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #532200;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scroll-container {
+  display: flex;
+  width: max-content;
+  animation: scroll 100s linear infinite;
+}
+
+.scroll-container img {
+  width: auto;
+  height: 100%; /* Ensure the images fit the div height */
+  margin-right: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .magicpattern { 
   width: 100%;
   height: 100%;
