@@ -9,13 +9,13 @@ const Aboutus = () => {
             <div className='w-4 h-4 bg-base-500 rotate-45'></div>
         </div>
         <div className='flex justify-center items-center sm:flex-col flex-col-reverse gap-20 mt-12'>
-            <p className='flex flex-col font-s text-xl flex-1 text-center gap-4 mx-40'>
+            <p className='flex flex-col font-s text-xl flex-1 text-center sm:gap-4 gap-8 sm:mx-40 mx-8'>
               <p>Hotel Kashi Mantram, located at the spiritual capital of India, Varanasi. Best Luxury hotel with ample facility and clean rooms and bathrooms.</p>
               <p>Located just a 2-minute walk from <span class='font-bold text-base-500 tracking-tight'>Godowlia</span>, often referred to as the <span class='font-bold text-base-500 tracking-tight'>Times Square of Varanasi</span>, our prime location places you at the center of the city's cultural pulse.</p>
               <p>The iconic <span class='font-bold text-base-500 tracking-tight'>Kashi Vishwanath Temple</span> is a mere 5-10 minutes away on foot, allowing you to easily immerse yourself in its spiritual ambiance.</p>
               {/* <p> Our prime location ensures that all major tourist attractions are within close reach, and various transportation options are readily available for your convenience.</p> */}
             </p>
-            <div className='w-full h-60 overflow-hidden'>
+            <div style={{width:"98vw"}} className='h-60 overflow-hidden'>
               <div className='scroll-container h-full'>
                 <img src="rooms/premium/r1.jpg" alt="" />
                 <img src="rooms/familysuit/r1.jpg" alt="" />
