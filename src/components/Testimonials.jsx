@@ -20,10 +20,14 @@ const Testimonials = () => {
           >
             <div className='w-full flex justify-start items-center flex-col gap-0 sm:gap-5 sm:flex-row'>
               <div className='flex-1 w-40 sm:w-20 h-40 sm:h-20 rounded-full bg-base-500'></div>
-              <div className=' w-full'>
+              <div className=' w-full flex gap-4 items-center'>
+              <div className='h-20 w-20 bg-black rounded-full overflow-hidden'><img src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+              <div className='flex flex-col justify-center'>
                 <div>``````</div>
                 <p className='text-2xl font-bold tracking-tight justify-self-start'>{name}</p>
                 <p>-Gobibo</p>
+              </div>
+                
               </div>
             </div>
             <div>I had a wonderful experience at Kashi Mantram. Every staff member I encountered, from the valet to the check-in were delightful and eager to help.</div>

@@ -9,32 +9,36 @@ const Services = () => {
             <div className='w-4 h-4 bg-base-500 rotate-45'></div>
         </div>
         <div className='w-full px-10 sm:px-40 flex justify-center items-center flex-wrap gap-10 py-10 text-xl font-s'>
-        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
-          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-            <p className='font-medium inline text-xl text-base-500'>Premium Room's</p>
-            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹3,000-3,500</p>
+        <div id='roomcard' className='relative roomcard flex-auto sm:flex-1 w-full flex flex-col justify-end items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <img className='absolute hover:scale-110 transition-all h-full w-full object-cover' src="/rooms/premium/r1.jpg" alt="" />
+          <div  className='bg-white/50 relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-base-500/50 border-t p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-white/50'></div>
+            <p className='font-medium inline text-xl text-base-700'>Premium Rooms</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹3,500</p>
           </div>
         </div>
-        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
-          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-            <p className='font-medium inline text-xl  text-base-500'>Super Premium Room's</p>
+        <div id='roomcard' className='relative roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <img className='absolute hover:scale-110 transition-all h-full w-full object-cover' src="/rooms/premium/r1.jpg" alt="" />
+          <div className='bg-white/50 relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-base-500/50 border-t p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-white/50'></div>
+            <p className='font-medium inline text-xl  text-base-700'>Super Premium Rooms</p>
             <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹4,000</p>
           </div>
         </div>
-        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
-          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-            <p className='font-medium inline text-xl  text-base-500'>Family Suit's</p>
+        <div id='roomcard' className='relative roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <img className='absolute hover:scale-110 transition-all h-full w-full object-cover' src="/rooms/familysuit/r1.jpg" alt="" />
+          <div className='bg-white/50 relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-base-500/50 border-t p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-white/50'></div>
+            <p className='font-medium inline text-xl  text-base-700'>Family Suit's</p>
             <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹7,500</p>
           </div>
         </div>
-        <div id='roomcard' className='roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
-          <div className='relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-white border-t-2 p-4 overflow-hidden backdrop-blur-md'>
-            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-base-600/20'></div>
-            <p className='font-medium inline text-xl text-base-500'>Dor</p>
-            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '></p>
+        <div id='roomcard' className='relative roomcard flex-auto sm:flex-1 w-full flex justify-center items-end sm:min-w-96 h-80 bg-gray-100 overflow-hidden'>
+          <img className='absolute hover:scale-110 transition-all h-full w-full object-cover' src="/rooms/standard/r1.jpg" alt="" />
+          <div className='bg-white/50 relative font-s w-full flex justify-between sm:flex-row flex-col items-start sm:items-end border-base-500/50 border-t p-4 overflow-hidden backdrop-blur-md'>
+            <div className='w-full h-20 absolute -top-20 right-10 blur-3xl bg-white/50'></div>
+            <p className='font-medium inline text-xl  text-base-700'>Standard Rooms</p>
+            <p id='innerprice' className='text-xl sm:text-xl innerprice1 opacity-100 transition-all '>₹----</p>
           </div>
         </div>
           
