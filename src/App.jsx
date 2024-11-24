@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Aboutus from './components/Aboutus'
@@ -34,9 +34,10 @@ function App() {
             <p className='text-xl tracking-tight text-center sm:text-left'>Book With</p>
             <p className='text-4xl font-semibold tracking-tight text-center'>Hotel Booking Website's</p>
           </div>
-          <div className='flex justify-center items-center flex-col sm:flex-row gap-10'>
-            <img className='w-auto h-10 sm:h-20' src="/Goibibo_logo.png" alt="" />
-            <img className='w-auto h-10 sm:h-20' src="/Makemytrip_logo.svg" alt="" />
+          <div className='flex justify-center items-center flex-col sm:flex-row gap-10 sm:gap-6'>
+            <a className='sm:scale-100 scale-150' href="https://www.airbnb.co.in/rooms/1225813929437791454?guests=1&adults=1&s=67&unique_share_id=5caf138b-47a1-4142-b2c2-bd908b8aa3d9"><img className='w-auto h-10 sm:h-20' src="/Airbnb.png" alt="" /></a>
+            <a className='scale-75' href=""><img className='w-auto h-10 sm:h-20' src="/booking.png" alt="" /></a>
+            
           </div>
         </div>
         </div>
@@ -47,17 +48,17 @@ function App() {
         </div>
         
       <div className='sticky  top-0 z-50 bg-white font-s w-full hidden sm:flex justify-center gap-10 items-center text-lg text-base-500 py-4 px-4'>
-          <button className='border-b-2 border-transparent hover:border-base-500 transition-all'>Home</button>
-          <button className='border-b-2 border-transparent hover:border-base-500 transition-all'>About Us</button>
-          <button className='border-b-2 border-transparent hover:border-base-500 transition-all'>Rooms</button>
-          <button className='border-b-2 border-transparent hover:border-base-500 transition-all'>Contact Us</button>
+          <button id='HomeBtn' className='border-b-2 border-transparent hover:border-base-500 transition-all'>Home</button>
+          <button id='AboutBtn' className='border-b-2 border-transparent hover:border-base-500 transition-all'>About Us</button>
+          <button id='RoomsBtn' className='border-b-2 border-transparent hover:border-base-500 transition-all'>Rooms</button>
+          <button id='contactBtn' className='border-b-2 border-transparent hover:border-base-500 transition-all'>Contact Us</button>
         </div>
       <Hero/>
       <Aboutus/>
       <Services/>
       <Testimonials/>
       <Contact/>
-      <div className='w-full h-2 bg-base-500'></div>
+      <div className='w-full text-white text-base font-thin bg-base-500 text-center'>Developed by Vinay Choudhary | vinaykumar7525@gmail.com</div>
     </div>
   )
 }

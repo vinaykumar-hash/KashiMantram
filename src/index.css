@@ -4,6 +4,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.fade-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* #Np_text {
+  transition: all ease-in-out 100ms;
+  opacity: 0.5;
+} */
+
+#Np_text.fade-transition {
+  opacity: 1;
+}
+
 .crossback{
   background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 0% 0% / 56px 56px, radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 28px 28px / 56px 56px, linear-gradient(#532200 0.5px, transparent 0.5px) 0px -0.25px / 28px 28px, linear-gradient(90deg, #532200 0.5px, #ffffff 0.5px) -0.25px 0px / 28px 28px #ffffff;
   background-size: 56px 56px, 56px 56px, 28px 28px, 28px 28px;

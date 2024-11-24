@@ -1,8 +1,19 @@
 import React from 'react'
 import { useEffect } from 'react'
 const Services = () => {
+  useEffect(()=>{
+    // Get references to the elements
+    const scrollButton = document.getElementById("RoomsBtn");
+    const targetElement = document.getElementById('Roomspage');
+    // Add an event listener for the click event
+    scrollButton.addEventListener('click', ()=>{
+      // Scroll the target element into view
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+  },[])
   return (
-    <div className='w-full font-main flex justify-center items-center flex-col py-10 polkaback'>
+    <div id='Roomspage' className='w-full font-main flex justify-center items-center flex-col py-10 polkaback'>
         <h2 className='text-2xl text-base-500 tracking-wide'>Kashi Mantram</h2>
         <h2 className='sm:text-6xl text-4xl px-4 text-base-500 '>Rooms & Services</h2>
         <div className='w-60 h-0.5 bg-base-500 flex justify-center items-center mt-2'>

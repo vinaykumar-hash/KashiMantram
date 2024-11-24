@@ -1,8 +1,19 @@
 import React from 'react'
-
+import { useEffect } from 'react';
 const Contact = () => {
+  useEffect(()=>{
+    // Get references to the elements
+    const scrollButton = document.getElementById("contactBtn");
+    const targetElement = document.getElementById('contactArea');
+    // Add an event listener for the click event
+    scrollButton.addEventListener('click', ()=>{
+      // Scroll the target element into view
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+  },[])
   return (
-    <div className='relative flex justify-center sm:justify-between items-center flex-col sm:flex-row w-full px-4 sm:px-40 py-20 text-base-500'>
+    <div id='contactArea' className='relative flex justify-center sm:justify-between items-center flex-col sm:flex-row w-full px-4 sm:px-40 py-20 text-base-500'>
       <div style={{zIndex:0}} className='w-full h-full crossback absolute top-0 left-0 opacity-20'></div>
       <div style={{zIndex:1}} className='w-full h-full hideeffect absolute top-0 left-0'></div>
       <p style={{zIndex:2}} className='font-main text-4xl sm:text-6xl flex flex-col justify-center items-center gap-4' >

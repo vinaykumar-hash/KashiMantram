@@ -32,7 +32,6 @@
 
 
 import React, { useState, useEffect } from 'react';
-
 const images = [
   '/rooms/premium/r1.jpg', 
   '/rooms/standard/r1.jpg', 
@@ -61,9 +60,20 @@ const Hero = () => {
     BookPage.classList.remove("flex");
     BookPage.classList.add("hidden");
   }
+  useEffect(()=>{
+    // Get references to the elements
+    const scrollButton = document.getElementById("HomeBtn");
+    const targetElement = document.getElementById('Homepage');
+    // Add an event listener for the click event
+    scrollButton.addEventListener('click', ()=>{
+      // Scroll the target element into view
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+  },[])
 
   return (
-    <div style={{ height: "75vh" }} className='sm:h-screen w-full flex flex-col'>
+    <div id='Homepage' style={{ height: "75vh" }} className='sm:h-screen w-full flex flex-col'>
       <div className='relative w-full flex-1 flex justify-center items-center flex-col font-main'>
         <div className='absolute w-full h-full overflow-hidden' style={{ zIndex: "-99" }}>
           {/* Image slideshow with fade effect */}

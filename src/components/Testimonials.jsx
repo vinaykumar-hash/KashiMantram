@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div style={{ background: "#F0F0F0" }} className='w-full flex justify-center items-center py-20 flex-col'>
+    <div style={{ background: "#F0F0F0" }} className=' hidden w-full  justify-center items-center py-20 flex-col'>
       <div className='font-main flex justify-center items-center flex-col'>
         <h2 className='text-2xl text-base-500 tracking-tight font-s'>Testimonials</h2>
         <h2 className='sm:text-6xl text-4xl text-base-500 '>What Guest’s Say?</h2>
