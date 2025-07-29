@@ -33,9 +33,9 @@
 
 import React, { useState, useEffect } from 'react';
 const images = [
-  '/rooms/premium/r1.jpg', 
-  '/rooms/standard/r1.jpg', 
-  '/rooms/familysuit/r1.jpg'
+  'out1.jpg', 
+  'out2.jpg', 
+  'out3.jpg'
 ];
 
 const Hero = () => {
@@ -91,7 +91,8 @@ const Hero = () => {
         <div style={{ zIndex: "-98" }} className='text-white antialiased'>
           <p className='text-xl' >Where</p>
           <h2 className='text-center sm:text-8xl text-6xl' style={{textShadow:"0px 0px 30px black"}}>
-            “ Hospitality<br />Meets<br />Spirituality ”
+            <div className='flex flex-col justify-center'><span>“ Hospitality</span><span className='text-6xl'>Meets</span><span>Spirituality ”</span></div>
+            
           </h2>
         </div>
 

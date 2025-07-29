@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Aboutus = () => {
-  const texts = ["Ghats", "Ghats", "Temples","Temples"];
+  const texts = ["Nearby Gems", "Nearby Gems", "Nearby Gems","Nearby Gems"];
   const imageData = [
     [
       {
@@ -41,17 +41,17 @@ const Aboutus = () => {
       {
         src: "https://images.deccanherald.com/deccanherald/import/sites/dh/files/gallery_images/2021/12/13/file7it39sqcijbouyq81z6.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
         name: "Kashi Vishwanath Temple",
-        distance: "Around 5km",
+        distance: "Around 500m",
       },
       {
-        src: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201808/Bharat_Mata_Mandir_Twitter_buzshilpi.jpeg",
-        name: "Bharat Mata Mandir",
-        distance: "Around 5km",
+        src: "https://youtellme.ai/wp-content/uploads/2021/12/DJI_0660.jpg_Durga-Temple-Varanasi.jpg",
+        name: "Durga Mandir",
+        distance: "Around 3km",
       },
       {
-        src: "https://www.trawell.in/admin/images/upload/195238684Sankat_Mochan_Hanuman_Temple.jpg",
+        src: "https://shrikashidham.com/wp-content/uploads/2023/09/shri-sankat-mochan-temple-varanasi.jpg",
         name: "Sankat Mochan Mandir",
-        distance: "Around 5km",
+        distance: "Around 3km",
       },
     ],[
       {
@@ -62,12 +62,12 @@ const Aboutus = () => {
       {
         src: "https://i0.wp.com/varanasivideos.com/wp-content/uploads/2019/06/Kaal-Bhairav-Temple-Otuside-View-1024x683.jpg?resize=1024%2C683",
         name: "Kal Bhairav Mandir",
-        distance: "Around 5km",
+        distance: "Around 500m",
       },
       {
-        src: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2020/05/ksp_5373.jpg?w=900",
-        name: "Mahadev Mandir",
-        distance: "Around 5km",
+        src: "https://s7ap1.scene7.com/is/image/incredibleindia/tulsi-manas-temple-varanasi-uttar-pradesh-1-attr-hero?qlt=82&ts=1727353606047",
+        name: "Tulsi Manas Mandir",
+        distance: "Around 3km",
       },
     ],
   ];
@@ -96,12 +96,11 @@ const Aboutus = () => {
 
   return (
     <div
-      style={{ background: "#F0F0F0" }}
-      className="w-full font-main flex justify-center items-center flex-col py-10"
+      className="polkaback w-full font-main flex justify-center items-center flex-col py-10"
     >
       {/* Heading Section */}
-      <h2 className="text-2xl text-base-500 tracking-wide">Kashi Mantram</h2>
-      <h2 className="sm:text-6xl text-5xl text-base-500">About Us</h2>
+      <h2 className="font-main2 text-2xl text-base-500 tracking-wiede">Kashi Mantram</h2>
+      <h2 className="font-main2 sm:text-6xl text-5xl text-base-500">About Us</h2>
       <div className="sm:w-60 w-48 h-0.5 bg-base-500 flex justify-center items-center mt-2">
         <div className="w-4 h-4 bg-base-500 rotate-45"></div>
       </div>
@@ -137,11 +136,11 @@ const Aboutus = () => {
 
       {/* Nearby Places Section */}
       <div className="flex w-full flex-col justify-center items-center my-10">
-        <h1 className="text-4xl text-base-500">Nearby Places</h1>
+        <h1 className="text-6xl text-base-500">Discover</h1>
         <div  className="flex flex-col justify-center items-center gap-6">
           <p
             id="Np_text"
-            className={`font-s text-base-500 opacity-80 text-7xl sm:text-8xl tracking-tighter transition-opacity duration-500 ease-in-out decoration-base-500 decoration-1 underline-offset-4 ${
+            className={`text-center font-s text-base-500 opacity-80 text-5xl sm:text-8xl tracking-tighter transition-opacity duration-500 ease-in-out decoration-base-500 decoration-1 underline-offset-4 ${
               fade ? "opacity-100" : "opacity-0"
             }`}
           >

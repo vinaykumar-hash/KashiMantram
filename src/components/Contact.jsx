@@ -18,7 +18,7 @@ const Contact = () => {
       <div style={{zIndex:1}} className='w-full h-full hideeffect absolute top-0 left-0'></div>
       <p style={{zIndex:2}} className='font-main text-4xl sm:text-6xl flex flex-col justify-center items-center gap-4' >
         <img className='w-auto h-40' src="/kashimantramlogo.jpg" alt="" />
-        <p>Kashi Mantram</p>
+        <p className='font-main2'>Kashi Mantram</p>
         </p>
       <div style={{zIndex:2}} className='flex flex-col'>
         {/* <p className='flex-1 font-s text-4xl text-base-500 font-medium tracking-tight border-b-2'>Reach Us</p> */}
